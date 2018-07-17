@@ -57,7 +57,7 @@ for num in data[0].split():
         if not data:
             print 'No attachments...'
             continue
-        f  = open(os.join(os.environ['HOME'],filename), 'w')
+        f  = open(os.path.join(os.environ['HOME'],filename), 'w')
         f.write(data)
         f.close()
         
